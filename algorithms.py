@@ -19,19 +19,6 @@ def insertion_sort(alist):
 # The next 3 algorithms are examples of "Prefix Average" algorithms, and each function
 # is a different timing-type of algorithm:
 
-# A Quadratic-Time Algorithm:
-def prefix_average1(S):
-		# Return list such that, for all j, A[j] equals average of S[0], ..., S[j]
-		n = len(S)
-		A = [0] * n							# create new list of n zeros
-		for j in range(n):
-				total = 0					# begin computing S[0] + ... + S[j]
-				for i in range(j + 1):
-						total += S[i]
-				A[j] = total / (j+1)		# record the average
-
-
-
 
 
 
